@@ -1,0 +1,19 @@
+# xpick
+
+pick a color and show it in hex.
+
+## Installation
+
+    $ make
+    $ sudo make install
+
+## Usage
+
+    $ xpick (then click somewhere)
+    #001800
+
+Use xclip to push the value into the clipboard instead of showing it on
+the terminal
+
+    $ xpick | xclip
+
