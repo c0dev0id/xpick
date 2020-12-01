@@ -29,7 +29,7 @@ int main() {
 
     XColor result; result.pixel = p;
     XQueryColor(dpy, DefaultColormap(dpy, DefaultScreen(dpy)), &result);
-    printf("#%02.2x%02.2x%02.2x\n",
+    printf("#%02x%02x%02x\n",
             result.red/256, result.green/256, result.blue/256);
     return 0;
 }
