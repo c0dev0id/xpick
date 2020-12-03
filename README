@@ -9,8 +9,13 @@ pick a color and show it in hex.
 
 ## Usage
 
-    $ xpick (then click somewhere)
+    $ xpick -h (then click somewhere)
     #001800
+
+    Options:
+        -h  HEX notation: #rrggbb
+        -r  RGB notation: rrr/ggg/bbb
+        -x  xterm nearest color number
 
 Use xclip to push the value into the clipboard instead of showing it on
 the terminal
