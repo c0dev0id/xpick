@@ -18,6 +18,7 @@
 #include <stdio.h>
 #include <string.h>
 #include <unistd.h>
+#include <stdint.h>
 
 // original implementation in tmux colour.c
 static int rgb_to_x256(uint8_t r, uint8_t g, uint8_t b)
