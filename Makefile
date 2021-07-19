@@ -1,5 +1,6 @@
 .POSIX:
 
+VERSION = 1.0
 PREFIX ?= /usr/local
 PKG_CONFIG = pkg-config
 
@@ -21,5 +22,13 @@ install: xpick
 uninstall:
 	rm -f $(DESTDIR)$(PREFIX)/bin/xpick
 	rm -f $(DESTDIR)$(PREFIX)/man/man1/xpick.1
+
+release:
+	rm -rf xpick-$(VERSION)*
+	mkdir xpick-$(VERSION)
+	cp Makefile xpick.c xpick.1 README xpick-$(VERSION)/
+	tar czf xpick-$(VERSION).tar.gz xpick-$(VERSION)
+	rm -rf xpick-$(VERSION)
+
 
 .PHONY: all clean install uninstall
