@@ -1,0 +1,27 @@
+.TH XPICK 1 "August 2021" "User Manuals"
+
+.SH NAME
+xpick \- a simple command line based X color picker
+
+.SH SYNOPSIS
+
+.B xpick -r
+show RGB notation RR/GG/BB
+
+.B xpick -h
+show HEX notation #RRGGBB
+
+.B xpick -x
+show XTerm nearest terminal color
+
+.SH DESCRIPTION
+\fBxpick\fR is a very simple color picker. When started, you can click
+on any pixel on your X display and it will output the color according to
+the parameters given. The parameters can be combined.
+
+.SH CREDITS
+The XTerm nearest terminal color logic has been taken from the tmux
+project at https://github.com/tmux/tmux
+
+.SH AUTHOR
+Stefan Hagen <sh@codevoid.de>
