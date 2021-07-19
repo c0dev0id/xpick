@@ -16,12 +16,12 @@ clean:
 	rm -f xpick
 
 install: xpick
-	install -m755 xpick $(DESTDIR)$(PREFIX)/bin/xpick
-	install -m644 xpick.1 $(DESTDIR)$(PREFIX)/man/man1/xpick.1
+	install -m755 xpick $(PREFIX)/bin/xpick
+	install -m644 xpick.1 $(PREFIX)/man/man1/xpick.1
 
 uninstall:
-	rm -f $(DESTDIR)$(PREFIX)/bin/xpick
-	rm -f $(DESTDIR)$(PREFIX)/man/man1/xpick.1
+	rm -f $(PREFIX)/bin/xpick
+	rm -f $(PREFIX)/man/man1/xpick.1
 
 release:
 	rm -rf xpick-$(VERSION)*
