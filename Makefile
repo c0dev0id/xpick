@@ -4,8 +4,8 @@ VERSION = 1.0
 PREFIX ?= /usr/local
 PKG_CONFIG = pkg-config
 
-CFLAGS = -Wall `$(PKG_CONFIG) --cflags x11`
-LDFLAGS = `$(PKG_CONFIG) --libs x11`
+CFLAGS += -Wall `$(PKG_CONFIG) --cflags x11`
+LDFLAGS += `$(PKG_CONFIG) --libs x11`
 
 all: xpick
 
